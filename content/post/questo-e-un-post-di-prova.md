@@ -12,7 +12,7 @@ draft: true
 
 ## What is Paddle and Why Integrate it?
 
-Paddle.com is **a digital software platform that allows developers to sell their products in the form of a subscription or one-time purchase**. The website also provides e-commerce, marketing, and analysis services to developers and businesses as well.
+Paddle.com is **a digital software platform that allows developers to sell their products in the form of a subscription or one-time purchase**. The website also provides e-commerce, marketing, and analysis services to developers and businesses as well. 
 
 As a developer in the Apple eco system, you are probably familiar with Apple's **in-app purchase** system that allows you to configure your application to enable one-time purchase or subscriptions that will unlock additional features.  This requires a lot of setup on **App Store Connect** and in your code to facilitate the purchase.  **Glassfy** is a great third party solution to simplify the process as described in this post [Adding In-app Subscriptions to your iOS app using Glassfy, SwiftUI, and Swift Concurrency](https://blog.glassfy.io/adding-in-app-subscriptions-to-your-ios-app-using-glassfy-swiftui-and-swift-concurrency-c77ae2ce2351)
 
