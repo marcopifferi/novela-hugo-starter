@@ -46,10 +46,8 @@ On the next screen, you need to do **three** things.
 1. Create a simple text file with a number of unique licence codes.
    **Note:** These codes must not only be unique within your own app, but across the entire Paddle system world-wide so it is recommended that you prefix your code with the first letters of your app.
    ![License File](Images/Fig2.png)
-
 2. You are not uploading any application, but rather, you should enter the **App Store URL** for your app into this field and **Click to Save**.  
    When the user receives the licence code via email, they will also be directed to that app on the App Store so they can install it.
-
 3. Click on the **Go to prices manager** button and either:
 
    a. set the price to be **free** or
@@ -62,7 +60,7 @@ Once his information has been entered and confirmed, all of the indicators will 
 
 #### Product ID
 
-If you return to the sidebar and select **Catalog > Products** you will find all of your products listed. The **Product ID** will be required in the next step, so make note of that.  
+If you return to the sidebar and select **Catalog > Products** you will find all of your products listed. The **Product ID** will be required in the next step, so make note of that.
 
 Observe the status and price point for your app.  In this example, the product is **active** and **free**.
 
@@ -86,15 +84,13 @@ Create a new sku and:
 
 ### Create Permission
 
-As with Store Kit skus, Paddle skus need to be added to a permission, so either create a new one or add it to an existing permission that you may already have set up for Store Kit in-app purchases.  In this example, I have created a unique sku for the Paddle licences that will essentially be equivalent to a single, non- renewing one-month Store-Kit in-app subscription.  This sku has been added to the *allFeatures* permission that also applies to the StoreKit in-app subscriptions.  There will be no charge to the user for using this code, as the prices was set to **free**, but after 30 days, the code will no longer be applied to the permission.
-
-![Glassfy Setup](Images/Fig7.png)
+As with Store Kit skus, Paddle skus need to be added to a permission, so either create a new one or add it to an existing permission that you may already have set up for Store Kit in-app purchases.  In this example, I have created a unique sku for the Paddle licences that will essentially be equivalent to a single, non- renewing one-month Store-Kit in-app subscription.  This sku has been added to the _allFeatures_ permission that also applies to the StoreKit in-app subscriptions.  There will be no charge to the user for using this code, as the prices was set to **free**, but after 30 days, the code will no longer be applied to the permission.
 
 ## Getting the License File
 
 Paddle will provide you with a **checkout link** that you can add to your own authorized domain web site.  Currently, Apple does not allow you to direct users within your app to go to that site to make a purchase, so you will have to find a way to promote the licence availability.
 
-When they access the link, they will be asked to enter their email address, and, if it is a paid purchase, provide payment details.  
+When they access the link, they will be asked to enter their email address, and, if it is a paid purchase, provide payment details.
 
 Once they make the "purchase" they will receive an email containing the Licence Key and the button is a link to application in the App Store.
 
@@ -108,7 +104,7 @@ All that is required is a simple **Glassfy.connectPaddle** function, that has on
 
 #### Completion Handler Version
 
-`````swift
+```swift
 let licenceKeyEntered = "GT-LVrAj6Yc1"
 Glassfy.connectPaddle(licenseKey: licenceKeyEntered) { error in
     if let error = error {
@@ -117,11 +113,11 @@ Glassfy.connectPaddle(licenseKey: licenceKeyEntered) { error in
     }
     // Now that permission has been granted, unlock the feature
 }
-`````
+```
 
 #### Asynchronous Version
 
-`````swift
+```swift
 let licenceKeyEntered = "GT-LVrAj6Yc1"
 Task {
     do {
@@ -133,5 +129,4 @@ Task {
   			// Alert user
     }
 }
-`````
-
+```
