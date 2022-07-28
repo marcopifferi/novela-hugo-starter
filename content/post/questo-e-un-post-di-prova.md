@@ -4,7 +4,7 @@ authors: []
 title: Questo e' un post di prova.
 excerpt: 'akfjajksfjkf fkjfjkfjk fjkfjkfjkf '
 date: 2022-07-27T22:00:00+00:00
-hero: ''
+hero: "/images/1-hd_mqjkirfrcpmdcbu5taq.png"
 draft: true
 
 ---
@@ -142,7 +142,7 @@ Glassfy.connectPaddle(licenseKey: licenceKeyEntered) { error in
 
 \#### Asynchronous Version
 
-\`\`\`\`\`swift
+`````swift
 
 let licenceKeyEntered = "GT-LVrAj6Yc1"
 
@@ -166,4 +166,4 @@ Task {
 
 }
 
-\`\`\`\`\`
+`````
